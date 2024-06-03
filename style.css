@@ -1,0 +1,40 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #e0e0e0;
+}
+
+#game-container {
+    display: flex;
+    gap: 20px;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(10, 40px);
+    grid-template-rows: repeat(10, 40px);
+    gap: 2px;
+}
+
+.board div {
+    width: 40px;
+    height: 40px;
+    background-color: #87ceeb;
+    border: 1px solid #000;
+}
+
+.board div.ship {
+    background-color: #2b2b2b;
+}
+
+.board div.hit {
+    background-color: #ff6347;
+}
+
+.board div.miss {
+    background-color: #f0f0f0;
+}
